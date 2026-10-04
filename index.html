@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzaffar | Cupping & Real Estate</title>
+    <style>
+    
+        body {
+    margin: 0;
+    padding: 0;
+    background-color: ivory;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 20px 40px;
+    background-color: #263d32;
+    color: white;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-mark {
+    background-color: #c79b63;
+    color: white;
+    padding: 10px 14px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+header span {
+    margin-right: 15px;
+}
+
+header small {
+    color: #ddd;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #c79b63;
+}
+
+main section {
+    padding: 60px 40px;
+}
+
+.portal-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portal-intro h1 {
+    color: #263d32;
+}
+
+.eye {
+    color: #a16f3d;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+i {
+    font-family: Georgia, serif;
+    color: #a16f3d;
+}
+
+.cards {
+    display: inline-block;
+    width: 40%;
+    min-height: 220px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #f4ead8;
+    border: 1px solid #c79b63;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.cards span {
+    color: #a16f3d;
+    font-size: 14px;
+}
+
+.cards h2,
+.cards h3 {
+    color: #263d32;
+}
+
+.cards p {
+    color: #666;
+}
+
+.cards b {
+    display: block;
+    margin-top: 30px;
+    color: #263d32;
+}
+
+.intro-1 {
+    background-color: #263d32;
+    color: white;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 22px;
+}
+
+.intro-1 a {
+    color: #c79b63;
+    text-decoration: none;
+}
+
+.about {
+    text-align: center;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: auto;
+}
+
+.section-heading h2 {
+    color: #263d32;
+}
+
+.section-heading p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.cupping {
+    background-color: #f4ead8;
+}
+
+.cupping-grid {
+    display: flex;
+    gap: 25px;
+}
+
+.therapy-card {
+    flex: 1;
+    padding: 30px;
+    background-color: ivory;
+    border: 1px solid #c79b63;
+}
+
+.card-num {
+    color: #a16f3d;
+}
+
+.therapy-card h3 {
+    color: #263d32;
+}
+
+.therapy-card p {
+    line-height: 1.5;
+    color: #555;
+}
+
+.therapy-card a {
+    color: #a16f3d;
+    text-decoration: none;
+}
+
+.real-estae {
+    background-color: #e9dfcd;
+    border-top: 1px solid #ccc;
+}
+
+.estate-copy {
+    max-width: 800px;
+}
+
+.estate-copy h2 {
+    color: #263d32;
+}
+
+.estate-copy > p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.estate-services {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.estate-services div {
+    width: 45%;
+    padding: 20px;
+    background-color: ivory;
+    border: 1px solid #c79b63;
+}
+
+.estate-services span {
+    display: block;
+    color: #a16f3d;
+    margin-bottom: 10px;
+}
+
+.estate-services b {
+    font-size: 20px;
+    color: #263d32;
+}
+
+.real-estae a {
+    color: #a16f3d;
+    text-decoration: none;
+}
+
+.contact {
+    background-color: #263d32;
+    color: white;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact-details a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.contact-details span {
+    display: block;
+    color: #c79b63;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.socials a {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer {
+    padding: 30px 40px;
+    background-color: #182a22;
+    color: #ddd;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        display: block;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main section {
+        padding: 40px 20px;
+    }
+
+    .cards {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cupping-grid {
+        display: block;
+    }
+
+    .therapy-card {
+        margin-bottom: 20px;
+    }
+
+    .estate-services {
+        display: block;
+    }
+
+    .estate-services div {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact {
+        display: block;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header
+        class="hero" id="home" >
+        <span class="brand-mark">M</span>
+        <br>
+        <span><strong>MUZAFFAR ALI AHMED RAI </strong><small> Wellness & Properties</small></span>
+       <nav>
+        <a class="nav-cupping" href="#cupping">Cupping Therapy</a>
+        <a class="nav-real-estate" href="#real-estate">Real Estate</a>
+        <a class="nav-about" href="#about">About</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+    </nav>
+    </header>
+   
+    <main>
+        <section>
+            <div class="portal-intro">
+              <p class="eye">Welcome</p>
+              <h1>How can I help <i>you?</i></h1>
+              <p>Choose a service to begin</p>
+            </div>
+         <div class="cards">
+             <span>01.wellness</span>
+             <h2>Cupping<br><i>Therapy</i></h2>
+             <p>Refule Yourself</p>
+             <b>Explore <i>↗</i></b>
+         </div>
+         <div class="cards">
+           <span>02.Properties</span>
+           <h3>Real<br><i>Estate</i></h3>
+           <p>Find your next chapter</p>
+           <b>Explore <i>↗</i></b>
+         </div>
+        </section>
+
+        <section class="intro-1" id="about">
+          <p>Two professional paths.<b>One commitment:</b> a better quality of life for every client.</p>
+           <a href="#contact">Let's talk<span>↗</span></a>
+        </section>
+        <section class="about" id="about" >
+            <div class="section-heading">
+               
+
+                    <h2> Restore your natural<i> balance</i></h2>
+                <p>
+                    Thoughtful, client-focused sessions designed to help you slow down,reset and feel your best.
+                </p>
+            </div>
+            </section>
+
+<section class="cupping" id="cupping">
+         <div class="cupping-grid">
+
+    <div class="therapy-card">
+        <span class="card-num">01</span>
+        <h3>Cupping Therapy</h3>
+        <p>A traditional therapy and Prophet's Sunnah.</p>
+        <a href="#contact">Book a session →</a>
+    </div>
+
+    <div class="therapy-card">
+        <span class="card-num">02</span>
+        <h3>Acupuncture</h3>
+        <p>Targeted pressure-point techniques to encourage relaxation and relief.</p>
+        <a href="#contact">Ask about it →</a>
+    </div>
+</div>
+   
+         </section>
+
+
+
+
+         <section class="real-estate" id="real-estate">
+          
+
+            <div class="estate-copy">
+                <p class="eye">02 Real Estate</p>
+                <h2> A home is more than an address. It's your<i> next chapter</i></h2>
+                   <p>
+                    Whether you are buying, investing, recieve clear, honest guidance backed by local market knowledge.
+                   </p>
+                   <div class="estate-services">
+                    <div>
+                        <span>
+                            01
+                        </span>
+                        <b>
+                            Buy
+                        </b>
+                        <p>
+                            Find a home that fits your life and goals. 
+                        </p>
+                    </div>
+
+                    <div>
+                           <span>02</span>
+                           <b>Invest</b>
+                           <p>
+                            Explore Dubai property / Airport property opportunities.
+                           </p>
+
+                    </div>
+                   </div>
+                   <a href="#contact">Discuss your property</a>
+           
+            </div>
+         </section>
+
+         <section class="contact" id="contact">
+            <div>
+                <p class="eye">Let's connect</p>
+                <h2>Ready when <i> you are.</i></h2>
+                    <p>
+                        For a wellness appointment or a Dubai property / Airport's property conversation, 
+                        I would be happy to hear from you.
+                    </p>
+            </div>
+
+
+            <div class="contact-details">
+                <a href="tel:+919007100522">
+                    <span>Call / Whatsapp</span>
+                    +91 90071 00522
+                </a>
+
+                <a href="mailto:muzaffarrai59@gmail.com">
+                    <span>Email</span>
+                    muzaffarrai59@gmail.com
+                </a>
+
+                <div class="socials">
+
+                    <a href="https://www.instagram.com/the_cupping_therapist_?stkn=Y3BxMWNjNnZ0b2lx" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/share/1Bw1VpbKiG/" target="_blank">Facebook</a>
+                    <a href="https://youtube.com/@cuppingandhijamawellnesscl9798?si=3zlKR0ICYVtEpygp" target="_blank">Youtube</a>
+
+                </div>
+            </div>
+         </section>
+         
+
+
+         <footer>
+           
+            <span> Muzaffar Ali Ahmed Rai </span>
+            <br>
+            <span> Wellness & Properties </span>
+         </footer>
+
+    </main>
+</body>
+</html>
